@@ -7,7 +7,7 @@ pipeline{
     stages{
         stage("Git Checkout"){
             steps{
-                git credentialsId: 'hello-world', url: 'https://github.com/pavanchiku/spring-petclinic.git'
+                git credentialsId: 'hello-world', url: 'https://github.com/pavanchiku/hello-world.git'
             }
         }
         stage("Maven Build"){
